@@ -26,6 +26,7 @@ public class Event {
 	private String eventLocation;
 	private String eventDateTime;
 	private String eventTicketPrice;
+	private String eventCategory;
 
 	private int availableSeats; // Total seats available for this event
 
@@ -106,5 +107,15 @@ public class Event {
 	public void setRegisteredUsers(Set<UserEntity> registeredUsers) {
 		this.registeredUsers = registeredUsers;
 	}
+
+	public String getEventCategory() {
+		return eventCategory;
+	}
+
+	public void setEventCategory(String eventCategory) {
+		this.eventCategory = eventCategory;
+	}
+	
+	
 
 }
